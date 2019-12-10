@@ -1,0 +1,28 @@
+function arrayFunction() {
+    var numbers = [];
+    for (i = 0; i < 20; i++) {
+        var numberInput = Number(prompt("Please enter your numbers"));
+        numbers.push(numberInput);
+    }
+    document.write('The size of array is  ' + numbers.length);
+    document.write('The lowest number in the array is  ' + Math.min(...numbers));
+    document.write('The highest number in the array is  ' + Math.max(...numbers));
+    document.write('The total of the numbers in the array is  ' + sum(numbers));
+    document.write('The average of the numbers in the array is  ' + average(numbers));
+
+}
+function sum(arr) {
+    var sum = 0;
+    for (var index = 0; index < arr.length; index++) {
+        sum += arr[index];
+    }
+    return sum;
+}
+function average(array) {
+    var sum = 0;
+    var count = array.length;
+    for (var i = 0; i < count; i++) {
+        sum = sum + array[i];
+    }
+    return sum / count;
+}
