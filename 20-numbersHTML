@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>20 Numbers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Click the button to start entering your numbers.</p>
+
+        <button onclick="arrayFunction()">Enter Number</button>
+
+        <p id="demo"></p>
+        <div></div>
+        <script src="20 numbers.js"></script>
+    </body>
+</html>
